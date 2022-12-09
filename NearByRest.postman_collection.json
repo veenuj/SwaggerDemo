@@ -1,0 +1,190 @@
+{
+	"info": {
+		"_postman_id": "e4af8732-93e4-4b4d-81d8-f10053ce93f6",
+		"name": "NearByRest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24767275"
+	},
+	"item": [
+		{
+			"name": "Get Data of Location",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/restAPI/location",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restAPI",
+						"location"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Data of user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/restAPI/location",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restAPI",
+						"location"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Data of order",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/orderAPI/order",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"orderAPI",
+						"order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "posting new data IN location",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"pName\":\"SONY BRAVIA\",\r\n    \"cat\":\"TV\",\r\n    \"amt\":\"11000\",\r\n    \"qt\" : \"3\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/orders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "posting new data IN order",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"foodName\":\"vda\",\r\n    \"price\":\"40\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/orderAPI/order",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"orderAPI",
+						"order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleting the item Copy",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/orders/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"orders",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "to put the item into id Copy",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 6,\r\n        \"pName\": \"Study\",\r\n        \"cat\": \"Table\",\r\n        \"amt\": \"1200\",\r\n        \"qt\" : \"4\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/orders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"orders"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
